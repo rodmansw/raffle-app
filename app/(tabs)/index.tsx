@@ -527,6 +527,8 @@ export default function DashboardScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingBottom: 0,
+    marginBottom: -22,
     backgroundColor: "#f9fafb",
   },
   scrollView: {
@@ -534,7 +536,6 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 16,
-    paddingBottom: 100,
   },
   section: {
     gap: 24,
@@ -559,7 +560,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f9fafb",
   },
-
   header: {
     gap: 8,
   },
@@ -734,7 +734,6 @@ const styles = StyleSheet.create({
   },
   submissionsList: {
     gap: 16,
-    paddingBottom: 100, // Add extra padding to prevent content from going behind tab navigation
   },
   submissionCard: {
     marginBottom: 12,

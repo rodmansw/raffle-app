@@ -287,7 +287,7 @@ export function SubmissionBottomSheet({
                     style={styles.generateButton}
                   />
                   {ticketNumbers.map((number, index) => (
-                    <View key={index} style={styles.ticketInputContainer}>
+                    <View key={number} style={styles.ticketInputContainer}>
                       <Text style={styles.ticketLabel}>
                         Ticket {index + 1}:
                       </Text>
@@ -412,13 +412,12 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     padding: 16,
-    paddingBottom: 100, // Add extra padding to prevent content from going behind tab navigation
   },
   statusSection: {
     marginBottom: 20,
   },
   section: {
-    marginBottom: 24,
+    marginBottom: 26,
   },
   sectionTitle: {
     fontSize: 16,
@@ -450,7 +449,7 @@ const styles = StyleSheet.create({
   },
   paymentImage: {
     width: "100%",
-    height: 200,
+    height: 600,
     borderRadius: 8,
     backgroundColor: "#f3f4f6",
     borderWidth: 1,
@@ -459,13 +458,13 @@ const styles = StyleSheet.create({
   ticketInputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 12,
+    justifyContent: "space-between",
+    marginBottom: 18,
   },
   ticketLabel: {
     fontSize: 14,
     color: "#374151",
-    marginRight: 12,
-    minWidth: 80,
+    marginRight: 16,
   },
   ticketInput: {
     flex: 1,

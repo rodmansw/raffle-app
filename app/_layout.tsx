@@ -11,7 +11,6 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { QueryProvider } from "@/components/providers/QueryProvider";
-import { SubmissionBottomSheet } from "@/components/SubmissionBottomSheet";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
