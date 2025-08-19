@@ -42,7 +42,7 @@ export function EditRaffleBottomSheet({
   );
   const [status, setStatus] = useState(raffle?.status || "draft");
   const [maxDigits, setMaxDigits] = useState(
-    raffle?.max_ticket_digits?.toString() || "6"
+    raffle?.max_ticket_digits?.toString() || "3"
   );
   const [imageBase64, setImageBase64] = useState(raffle?.image_url || "");
   const [isSaving, setIsSaving] = useState(false);
